@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: all 0.4s ease-in;
+}
+
+
+h4 {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+
+.grid-item item-2 {
+  display: grid;
+  width: 100%;
+  min-height: calc(100vh - 4.25rem);
+  place-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+
+/* Write your CSS below */
+
+#slider {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+
+#slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 15 px;
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+  transition: all 1s ease-in-out;
+}
+
+#slider img.active {
+  opacity: 1;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: orange;
+  color: black;
+  font-size: 32px;
+  font-stretch: condensed;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+button#prev {
+  left: 50px;
+  padding: 7px 17px 7px 15px;
+  padding-right: 15px;
+}
+
+button#next {
+  right: -100px;
+  padding: 7px 15px 7px 17px;
+}
+.motivation-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  color: white;
+  background-color: orange;
+}
+
+.subtitle {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 65px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
+.title::before {
+  content: '✨';
+}
+
+.title::after {
+  content: '✨';
+}
+
+.title::first-line {
+  color: blue;
+}
+
+.navbar {
+  list-style-type: none;
+  font-size: 130%;
+  margin: 25px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: orange;
+  border-style: solid;
+}
+
+.navbar li ::after {
+  content: '📍';
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightyellow;
+  color: black;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  max-height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  padding: 25px;
+  margin: 25px;
+  margin-top: 50px;
+  gap: 15px;
+  background-color: blue;
+  border: solid;
+  border-color: black;
+}
+
+.grid-item {
+  border: groove;
+  border-color: orange;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 25px;
+  background-color: whitesmoke;
+}
+
+.C1-projects {
+  text-align: center;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 180%;
+  font-weight: bold;
+  background-color: orange;
+  border: solid;
+  border-color: black;
+  margin-left: 30px;
+  margin-right: 30px;
+
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  padding: 25px;
+  padding-bottom: 25px;
+  margin: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 15px;
+}
+
+.project-title {
+  text-align: left;
+}
+
+.image2 {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.caption {
+  align-text: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.site-findings {
+  list-style-type: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.site-findings2::before {
+  content: '✅';
+}
+
+.image {
+  margin-left: 75px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 32px;;
+  padding-right: 32px;
+  padding-bottom: 10px;
+}
+
+.heading2 {
+  color: white;
+  background-color: orange;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 130%;
+}
+
+.animated-div2 {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  animation: slide-transform 3s infinite;
+}
+
+.animated-div {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  animation: slide-transform 3s forwards;
+}
+
+@keyframes slide-transform {
+  50% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(80vw);
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: translateX(0);
+    border-radius: 50%;
+  }
+}
+
+.points {
+  background-color: blue;
+  border: solid;
+  border-color: black;
+  margin: 25px;
+  color: white;
+}
+
+.points::first-letter {
+  font-size: 180%;
+  color: orange;
+  margin-left: 20px;
+}
+
+.details {
+  display: grid;
+  padding: 25px;
+  margin: 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  text-indent: 8px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.slide-in {
+  animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(80vw);
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: translateX(0);
+    border-radius: 0;
+  }
+}
+
+.wrapper-information {
+  width: max-content;
+  display: center;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+
+  .call-to-action:first-line {
+    color: blue;
+    font-weight: bold;
+  }
+
+  .call-to-action::after {
+    content: '✉';
+  }
+
+  .information {
+    border-color: orange !important;
+    border: solid;
+    transition: all 0.5s ease-out;
+    margin-left: 35px;
+  }
+
+  .information::placeholder {
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    color: blue;
+  }
+
+  .contact {
+    margin-left: 15px;
+  }
